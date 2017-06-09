@@ -101,14 +101,15 @@ example(of: "create") {
   }
   
   let disposeBag = DisposeBag()
-  Observable<String>.create { observer in
+  Observable<String>
+    .create { observer in
     // 1
     observer.onNext("1")
     
-    //    observer.onError(MyError.anError)
+//    observer.onError(MyError.anError)
     
     // 2
-    //    observer.onCompleted()
+//    observer.onCompleted()
     
     // 3
     observer.onNext("?")
